@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bodyWrapper{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(130deg,rgba(15, 27, 195, 0.799) 0%,rgba(115, 0, 255, 0.712) 50%,rgb(106, 0, 255) 99%);
+    position: absolute;
+    top: 0;
+}
+.listContainer{
+    height: auto;
+    width: 35vw;
+    margin: 5rem auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 3rem 1rem;
+}
+.listTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.listTitle{
+    font-size: 1.2rem;
+}
+.listIcon{
+    margin-left: 0.5rem;
+    height: 1.8rem;
+}
+.taskInputContainer{
+    margin-top: 1rem;
+}
+#taskInput{
+    height: 2.5rem;
+    width: 80%;
+    padding: 0 1rem;
+    border-radius: 25px 0px 0px 25px;
+    background-color:  #e7e0e0;
+    border: 0;
+    outline: 0;
+}
+.addTaskButton{
+    height: 2.5rem;
+    width: 25%;
+    border-radius: 25px;
+    border: 0;
+    outline: 0;
+    background-color: rgb(246, 124, 11);
+    color: white;
+    margin-left: -2rem;
+    cursor: pointer;
+}
+.listItemContainer{
+    margin-top: 1.2rem;
+}
+.listItemUnchecked{
+    list-style: none;
+    font-size: 1rem;
+    padding : 0.5rem 2.3rem;
+    user-select: none;
+    cursor: pointer; 
+   position: relative;
+}
+.listItemUnchecked::before{
+    content:"";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(/images/unchecked.png);
+    background-size: cover;
+    top: 10px;
+    left: 8px;
+    background-position: center;
+}
+.listItemChecked{
+    list-style: none;
+    font-size: 1rem;
+    padding : 0.5rem 2.3rem;
+    user-select: none;
+    cursor: pointer; 
+    position: relative;
+    color: #555;
+    text-decoration: line-through;
+}
+.listItemChecked::before{
+    content:"";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(/images/checked.png);
+    background-size: cover;
+    top: 10px;
+    left: 8px;
+    background-position: center;
+}
+.crossIconContainer{
+    position: absolute;
+    right: 16px;
+    top:10px;
+    padding-top: 2px;;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50%;
+}
+.crossIconContainer:hover{
+    background-color: #b1acac;
+}
